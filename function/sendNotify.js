@@ -32,6 +32,7 @@ let DD_BOT_SECRET = '';
 
 if (process.env.PUSH_KEY) {
   SCKEY = process.env.PUSH_KEY;
+  console.log('\n您提供server酱的SCKEY:${SCKEY}\n');
 }
 if (process.env.BARK_PUSH) {
   if(process.env.BARK_PUSH.indexOf('https') > -1 || process.env.BARK_PUSH.indexOf('http') > -1) {
