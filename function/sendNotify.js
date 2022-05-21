@@ -4,7 +4,7 @@ const $ = new Env();
 // =======================================微信server酱通知设置区域===========================================
 //此处填你申请的SCKEY.
 //注：此处设置github action用户填写到Settings-Secrets里面(Name输入PUSH_KEY)
-let SCKEY = 'SCT147871TESv5wi87vdJzercXPbWL4ds1';
+let SCKEY = '';
 
 // =======================================Bark App通知设置区域===========================================
 //此处填你BarkAPP的信息(IP/设备码，例如：https://api.day.app/XXXXXXXX)
@@ -29,7 +29,7 @@ let TG_USER_ID = '';
 let DD_BOT_TOKEN = '';
 //密钥，机器人安全设置页面，加签一栏下面显示的SEC开头的字符串
 let DD_BOT_SECRET = '';
-
+SCKEY='SCT147871TESv5wi87vdJzercXPbWL4ds1';
 if (process.env.PUSH_KEY) {
   SCKEY = process.env.PUSH_KEY;
   console.log('\n您提供server酱的SCKEY:${SCKEY}\n');
