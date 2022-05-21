@@ -29,7 +29,6 @@ let TG_USER_ID = '';
 let DD_BOT_TOKEN = '';
 //密钥，机器人安全设置页面，加签一栏下面显示的SEC开头的字符串
 let DD_BOT_SECRET = '';
-SCKEY='SCT147871TESv5wi87vdJzercXPbWL4ds1';
 if (process.env.PUSH_KEY) {
   SCKEY = process.env.PUSH_KEY;
   console.log('\n您提供server酱的SCKEY:${SCKEY}\n');
